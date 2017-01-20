@@ -130,19 +130,3 @@ class CCSocket:
         elif flag == "Client":
             self.client.close()
 
-
-if __name__ == "__main__":
-    conn = CCSocket("127.0.0.1", 8989, timeout=3)
-    # try:
-        # conn.TcpClient()
-        # conn.TcpClient()
-    conn.listen(10)
-    print(conn.receive(128))
-    conn.quit()
-    # except NoneObject as e:
-    #     print(e)
-    # except Timeout as e:
-    #     print(e)
-    # except AlreadyCreated as e:
-    #     print(e)
-    #     conn.quit()
